@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100&family=Montserrat:wght@500&family=Roboto:ital,wght@1,300&display=swap");
+
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+
+body {
+  background: linear-gradient(to bottom, #f5f5f5, #eaf2f8);
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  background-color: #fff;
+}
+
+.pages {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.home-container {
+  display: flex;
+  background-color: #ffffffda;
+  flex-wrap: wrap;
+}
+
+.home-content {
+  flex: 3;
+  padding: 20px;
+  
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.workouts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.create h3 {
+  font-weight: 700;
+  color: #1aac83;
+}
+
+.create label {
+  color: #000000;
+  font-weight: 500;
+}
+.workout {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+}
+
+.workout-details {
+  text-align: center;
+  width: 200px;
+  background-color: #0b0b0b;
+  border-radius: 14px;
+  margin: 20px auto;
+  padding: 25px;
+  position: relative;
+  box-shadow: 1px 1px 4px rgb(20, 26, 121);
+}
+
+.workout-details:hover {
+  
+  zoom: normal;
+  box-shadow: 5px 5px 12px var(--primary);
+}
+
+.workout-details h4 {
+  margin: 0 0 7px 0;
+  font-size: 1.4em;
+  color: #f5f6f8;
+}
+
+.workout-details p {
+  margin: 0 0 5px 0;
+  font-size: 0.8em;
+  color: #cad5eb;
+}
+
+.workout-details span {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  
+  padding: 6px;
+  border-radius: 99%;
+  color: #0b875b;
+}
+.workout-details span:nth-of-type(2) {
+  position: absolute;
+  top: 35px;
+  right: 6px;
+  cursor: pointer;
+  font-size: 12px;
+
+  padding: 6px;
+  border-radius: 99%;
+  color: #0b875b;
+}
+.small-img {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  transition: filter 0.3s ease-in-out;
+}
+.small-img:hover {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  filter: brightness(1.3);
+}
+.workout-details span:hover{
+  color: var(--error);
+}
+label,
+input {
+  display: block;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: var(--primary);
+  border: 0;
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px; /* Add margin-top to adjust the position */
+  padding-bottom: 12px; /* Increase the padding-bottom for better spacing */
+}
+
+form button:hover {
+  background-color: #0b875b; /* Change the background color on hover */
+}
+p.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.main-container {
+  background-color: #ffffffda;
+}
+.container-link h1 {
+  text-align: center;
+  color: #1aac83;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #1aac83;
+
+  
+}
+
+.container-link a {
+  text-decoration: none; /* Remove the underline */
+}
+
+input.error {
+border: 1px solid var(--error);
+}
